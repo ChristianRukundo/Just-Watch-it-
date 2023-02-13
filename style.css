@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,500;1,600&family=Recursive:wght@300&display=swap');
+
+* {
+    font-family: 'Poppins';
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container2 {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container1 {
+    width: 100vw;
+    height: 120vh;
+    background-image: url(./images/jack-reacher-star-wars-interstellar-movie-john-wick-wallpaper-68762d68a0501c78502ca10ee8a2148a.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    margin: 2rem;
+}
+
+.logo img {
+    width: 50%;
+    color: #fff;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(6, 14, 6);
+    font-size: 1rem;
+    height: 100px;
+    margin-bottom: 0;
+
+}
+
+.search button i {
+    padding: 10px;
+}
+
+.search button i:hover {
+    background-color: rgb(3, 96, 3);
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.search-login {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+
+
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    margin: 1rem;
+}
+
+.search {
+    white-space: nowrap;
+    margin-right: 1rem;
+}
+
+.search input {
+    height: 35px;
+    outline: 1px solid rgb(12, 26, 12);
+    background-color: rgb(22, 24, 22);
+    text-align: center;
+    color: #fff;
+    margin-right: 0;
+
+}
+
+.search button {
+    height: 35px;
+    background-color: white;
+    border: 1px solid rgb(22, 24, 22);
+
+}
+
+
+.login .sign {
+    padding: 10px 18px;
+    background-color: rgb(3, 96, 3);
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.login .sign.in {
+    background-color: #fff;
+    margin-left: 10px;
+    border: 1px solid rgb(3, 96, 3);
+    color: rgb(3, 96, 3);
+}
+
+.login .sign.up {
+    margin-right: 1rem;
+}
+
+.side-nav:hover {
+    opacity: 1;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.side-nav {
+    width: 20%;
+    height: 105vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(6, 14, 6);
+    opacity: 0;
+    transition: all .4s linear;
+}
+
+.side-nav:hover {
+    opacity: 1;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+
+}
+
+ol li a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-nav .search-login-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30%;
+    justify-content: space-around;
+}
+
+.main {
+    background-color: rgb(22, 24, 22);
+    width: 100vw;
+    height: auto;
+
+
+}
+
+main {
+
+    width: auto;
+    background-color: rgb(22, 24, 22);
+
+    margin-bottom: 0;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0;
+
+
+}
+
+.main .title {
+    padding: 2rem 0;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.main .title .main h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0 2rem;
+}
+
+main .movie {
+
+    width: 150px;
+    height: 250px;
+    margin: 4rem 0;
+    text-align: left;
+    border-radius: 8px;
+    transition: all .3s linear;
+}
+
+main .movie .image {
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 250px;
+    transition: all .5s linear;
+    border-radius: 8px;
+}
+
+main .movie.number1:hover {
+    background-color: rgba(0, 0, 0, .1);
+
+}
+
+.hidden-tetx {
+    visibility: hidden;
+    position: absolute;
+}
+
+.movie.number1 .image:hover {
+    opacity: .4;
+    cursor: pointer;
+    width: 160px;
+    height: 260px;
+
+}
+
+.movie.number1 .image:hover .hidden-tetx {
+    visibility: visible;
+}
+
+main .movie .content {
+    position: relative;
+}
+
+main .movie .content span {
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+main .movie h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+main .movie span {
+    color: #444;
+    font-size: 1.3rem;
+}
+
+
+.movie:nth-child(1) {
+    margin-left: 2rem;
+}
+
+.movie:nth-child(7) {
+    margin-left: 2rem;
+}
+
+.movie:nth-child(15) {
+    margin-left: 3rem;
+}
+
+.movie .image:nth-child(25) {
+    margin-left: 3rem;
+}
+
+
+.wrapper2 {
+    background-image: url(./images/jack-reacher-star-wars-interstellar-movie-john-wick-wallpaper-68762d68a0501c78502ca10ee8a2148a.jpg);
+    position: relative;
+    top: 100px;
+    left: 0;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.login-form {
+    background-color: rgba(0, 0, 0, .05);
+    backdrop-filter: blur(10px);
+    width: 500px;
+    height: 500px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 100px 150px;
+    border-radius: 250px;
+
+}
+
+.input {
+    margin: 1rem;
+
+}
+
+.input input {
+    height: 40px;
+    border-radius: 5px;
+
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px solid white;
+}
+
+.input input:focus {
+    outline: none;
+    color: #fff;
+
+}
+
+.input.image #image {
+    border-bottom: none;
+    display: none;
+}
+
+#profile {
+    background-image: linear-gradient(80deg, rgb(3, 96, 3), rgba(3, 96, 3, .3));
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+form a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all .5s linear;
+}
+
+a:active {
+    opacity: .5;
+    font-size: .98rem;
+    margin-top: 1rem;
+}
+
+a:hover {
+    opacity: .7;
+}
+
+
+.footer .container {
+    max-width: 1170px;
+    margin: auto;
+
+
+
+}
+
+.footer .row {
+    display: flex;
+
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.footer {
+    background-color: rgb(29, 35, 29);
+    padding: 100px 70px;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+
+.footer-col h4 {
+    font-size: 1.1rem;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(3, 96, 3);
+    height: 4px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer .footer-col ul li a {
+
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer .footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.copy-right {
+    text-align: center;
+    font-size: 5rem;
+    color: rgb(48, 72, 48);
+    margin-bottom: 0;
+}
+
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
